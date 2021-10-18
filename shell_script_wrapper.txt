@@ -1,0 +1,17 @@
+
+#//////////////////////////
+#  This is where I add the wrapper for the application
+#//////////////////////////
+
+
+/etc/systemd/system/okay.service
+
+[Unit]
+Description=My daemon
+
+[Service]
+ExecStart=/usr/bin/okay
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
