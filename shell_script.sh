@@ -20,6 +20,6 @@ OF=$(lsof / wc -l)
 while true; do
 echo "Hostname: ${HOST} " " Kernel: ${KER}" "  Free_Inodes: ${FI}" "  File Max: ${FM}"  " Files Opened: ${OF}"  " status=okay `date -u`" >> /var/log/logfile.log
 echo "Waiting..."
-sleep 5
+sleep 60
 done
 ## ///////////////////////////////////////
